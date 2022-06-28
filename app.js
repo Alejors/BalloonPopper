@@ -3,7 +3,7 @@ let colors = ['green', 'yellow', 'teal', 'purple',
 'grey', 'lightblue', 'brown','blue'];
 
 var ballonsMap = [];
-let amount = window.prompt("How many baloons?");
+let amount = window.prompt("How many balloons?");
 parseInt(amount);
 
 let reventados = 0;
