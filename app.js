@@ -1,8 +1,19 @@
-let ballonsMap = ['green', 'yellow', 'teal', 'purple', 
+let colors = ['green', 'yellow', 'teal', 'purple', 
 'pink', 'orange', 'black', 'white','red', 'turquoise',
-'grey', 'lightblue', 'brown','green', 'yellow', 'teal', 
-'purple', 'blue', 'black', 'turquoise'];
+'grey', 'lightblue', 'brown','blue'];
+
+var ballonsMap = [];
+let amount = window.prompt("How many baloons?");
+parseInt(amount);
+
 let reventados = 0;
+
+let boton = document.getElementById("number");
+boton.addEventListener('change', (e) => {
+    setgame(boton.value);
+    boton.value = "";
+    render();
+})
 
 const popBalloon = (position) => {
 
@@ -27,4 +38,12 @@ const render = () => {
     if(activeBalloons == 0) window.location.reload();
 }
 
-window.onload = render();
+const setgame = (num) => {
+    for(let i = 0; i < num; i++){
+        let index = Math.floor(Math.random() * 14);
+        ballonsMap.push(colors[index]);
+    }
+}
+window.onload =
+setgame(amount);
+render();
