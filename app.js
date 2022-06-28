@@ -1,5 +1,5 @@
 let colors = ['green', 'yellow', 'teal', 'purple', 
-'pink', 'orange', 'black', 'white','red', 'turquoise',
+'pink', 'orange', 'black', 'lightgreen','red', 'turquoise',
 'grey', 'lightblue', 'brown','blue'];
 
 var ballonsMap = [];
